@@ -215,6 +215,7 @@ Can you create a loop where all the LED colours come on in sequence? The colours
 Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek chic? We can write a simple program that uses a pusling function from the PyGlow module.
 
 **Activity Checklist:**
+
 1. Open a new text editor file in **IDLE**.
 
 2. Type the following code:
