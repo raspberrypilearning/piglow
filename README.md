@@ -83,8 +83,11 @@ To program the PyGlow with your Raspberry Pi you will need to download and use t
 **Activity Checklist:**
 
 1. Begin by creating a folder or directory for your PyGlow files by typing `mkdir pyglow`
+
 2. Next change to the pyglow folder by typing `cd pyglow`
+
 3. This folder will be empty and you can see this by typing `ls` to check a folder's contents.
+
 4. Download the python file required by typing the following all one one line and pressing **Enter** on your keyboard:
 
 	```
@@ -123,9 +126,12 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 
 **Activity Checklist:**
 
-1. To write your glowing PiGlow program using Python you will need to open **IDLE3** by double clicking on the desktop icon.
+1. To write your glowing PiGlow program using Python you will need to open **IDLE** by double clicking on the desktop icon.
+
 2. Once the Python Shell has loaded click on **File** and **New Window** to open a new text editor file.
+
 3. Save this file as `FirstPiGlow.py` by clicking on **File** and **Save As**
+
 4. Being your program by importing the Pyglow module and the Time module. 
 
 	```python
@@ -156,12 +162,54 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 	pyglow.update_leds()
 	```
 9. Save your file by clicking on **File** and **Save**
+
 10. In an LXTerminal window type the following to run your program:
 	
 	```
 	sudo python FirstPiGlow.py
 	```		
 	
-	Make sure you keep an eye on your PiGlow to see if LED 1 lights up!
+	Make sure you keep an eye on your PiGlow to see if LED 1 lights up! 
 	
+**Challenge:**
+Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!	
 	
+## Step 4: Add a Loop to make the Lights Flash
+
+In the last step you created a program to turn on and off LED1 on the PiGlow. We can now add a loop to reatedly turn on and off groups of coloured LEDs.
+
+**Activity Checklist:**
+
+1. Open the file `FirstPiGlow.py` in **IDLE**.
+
+2. Underneath `pyglow.all(0)` type:
+
+	```python
+	while True:
+	    pyglow.color("blue",100)
+	    sleep(1)
+	    pyglow.color("blue",0)
+	    pyglow.color("red",100)
+	    sleep(1)
+	    pyglow.color("red",0)
+	```
+	
+3. 	Save it as `FlashPiGlow.py` by clicking on **File** and **Save As**.
+4. 	In LXTerminal run the program by typing:
+
+	```
+	sudo python FlashPiGlow.py
+	```
+
+**Challenge:**
+Can you create a loop where all the LED colours come on in sequence? The colours include:
+- "White"
+- "Green"
+- "Yellow"
+- "Orange"
+- "Red"
+- "Blue"
+
+## Step 5: Pulsing PiGlow
+	
+	    
