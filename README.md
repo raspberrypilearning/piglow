@@ -91,14 +91,14 @@ To program the PyGlow with your Raspberry Pi you will need to download and use t
 4. Download the python file required by typing the following all one one line and pressing **Enter** on your keyboard:
 
 	```
-	https://raw.github.com/benleb/PyGlow/master/pyglow.py --no-check-certificate
+        wget https://raw.github.com/benleb/PyGlow/master/pyglow.py --no-check-certificate
 	```
-5. 	This will give you a file called piglow.py, this is the module and will do all the hardwork.
+5. 	This will give you a file called pyglow.py, this is the module and will do all the hardwork.
 
 6. Now download `test.py`, a program to test that your PiGlow will work by typing:
 
 	```
-    wget https://raw.github.com/Boeeerb/PiGlow/master/Examples/test.py
+        wget https://raw.github.com/benleb/PyGlow/master/examples/test.py --no-check-certificate
 	```
 	
 7. Once downloaded, run it by typing: 
@@ -212,7 +212,7 @@ Can you create a loop where all the LED colours come on in sequence? The colours
 
 ## Step 5: Pulsing PiGlow
 
-Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek chic? We can write a simple program that uses a pusling function from the PyGlow module.
+Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek chic? We can write a simple program that uses a pulsing function from the PyGlow module.
 
 **Activity Checklist:**
 
