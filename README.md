@@ -1,35 +1,57 @@
-## Make your Raspberry Pi Glow
+# Make your Raspberry Pi Glow
 
-**Introduction**
+##Introduction
 
 You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://shop.pimoroni.com/products/piglow). 
 
-![alt image](PiGlow.jpeg "Pimoroni's PiGlow")
+![](PiGlow.jpeg "Pimoroni's PiGlow")
 
 This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (oo that rhymed.) 
 
-**Requirements**
+##Requirements
 
-This guide assumes that you have the following:
-
-- A Raspberry Pi
-- Connected to a monitor or TV
-- A keyboard and mouse
+- Raspberry Pi
+- Micro USB power adaptor
+- An SD card with Raspbian already set up through NOOBS
+- USB keyboard
+- USB mouse
+- HDMI cable
+- A monitor or TV
 - A PiGlow
-- An SD card with the latest version of Raspbian installed via NOOBS
-- An internet connection either by Wifi or Ethernet to get the files you need only.
+- An internet connection (ethernet or wi-fi) to download the required files
 
-## Step 0: Set up your Raspberry Pi
 
-You will need to set up your Raspberry Pi to take part in this activity. [See the Raspberry Pi Quick Start Guide here](http://www.raspberrypi.org/quick-start-guide) to get you up and running.
+## Step 0: Setting Up your Pi
 
+First check that you have all the parts you need to get your Raspberry Pi set up and working.
+
+- Raspberry Pi
+- Micro USB power adaptor
+- An SD card with Raspbian already set up through NOOBS
+- USB keyboard
+- USB mouse
+- HDMI cable
+- A monitor or TV
+
+###Activity Checklist:
+
+1.	Place the SD card into the slot of your Raspberry Pi. It will only fit one way so be careful not to break the card. 
+2.	Next connect the HDMI cable from the monitor (or TV) to the HDMI port on the Pi and turn on your monitor. 
+3.	Plug the USB keyboard and mouse into the USB ports on the Pi.
+4.	Plug in the micro USB power supply and you should see some text appear on your screen.
+5.  When prompted to login type:
+
+    ```
+    Login: pi
+    Password: raspberry
+    ```
 ## Step 1: Setting up your Raspberry Pi to use PiGlow
 
 In order to use your PiGlow board there are a few settings that need to be changed, and some files that need to be downloaded. 
 
 *Note: PiGlow is based on an IC that communicates via i2c protocol. We need to enable i2c communication on your Raspberry Pi for it to work.*
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1. Enable the i2c driver modules by editing the modules config file:
 
@@ -80,7 +102,7 @@ In order to use your PiGlow board there are a few settings that need to be chang
 
 To program the PyGlow with your Raspberry Pi you will need to download and use the PyGlow python module. Your Raspberry Pi will need to be connected to the internet in order to this.
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1. Begin by creating a folder or directory for your PyGlow files by typing `mkdir pyglow`
 
@@ -124,7 +146,7 @@ To program the PyGlow with your Raspberry Pi you will need to download and use t
 Now that you have all the files that you need for your PiGlow, it is time to create your very first glowing led program using Python. In this step you will learn how to import the functions that you need from the modules to turn on and off individual LEDs on the PiGlow.
 
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1. To write your glowing PiGlow program using Python you will need to open **IDLE** by double clicking on the desktop icon.
 
@@ -171,14 +193,15 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 	
 	Make sure you keep an eye on your PiGlow to see if LED 1 lights up! 
 	
-**Challenge:**
+###Challenge:
+
 Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!	
 	
 ## Step 4: Add a Loop to make the Lights Flash
 
 In the last step you created a program to turn on and off LED1 on the PiGlow. We can now add a loop to reatedly turn on and off groups of coloured LEDs.
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1. Open the file `FirstPiGlow.py` in **IDLE**.
 
@@ -201,7 +224,8 @@ In the last step you created a program to turn on and off LED1 on the PiGlow. We
 	sudo python FlashPiGlow.py
 	```
 
-**Challenge:**
+###Challenge:
+
 Can you create a loop where all the LED colours come on in sequence? The colours include:
 - "White"
 - "Green"
@@ -214,7 +238,7 @@ Can you create a loop where all the LED colours come on in sequence? The colours
 
 Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek chic? We can write a simple program that uses a pulsing function from the PyGlow module.
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1. Open a new text editor file in **IDLE**.
 
