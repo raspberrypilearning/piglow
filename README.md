@@ -18,7 +18,7 @@ This project gives you the opportunity to put your PiGlow to good work by progra
 - HDMI cable
 - A monitor or TV
 - A PiGlow
-- An internet connection (ethernet or wi-fi) to download the required files
+- An internet connection (Ethernet or WiFi) to download the required files
 
 
 ## Step 0: Setting Up your Pi
