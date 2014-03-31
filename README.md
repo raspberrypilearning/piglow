@@ -45,6 +45,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
     Login: pi
     Password: raspberry
     ```
+    
 ## Step 1: Setting up your Raspberry Pi to use PiGlow
 
 In order to use your PiGlow board, there are some settings that need to be changed and some files that need to be downloaded. 
@@ -195,7 +196,7 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 	
 ###Challenge:
 
-Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!	
+Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way?	
 	
 ## Step 4: Add a loop to make the lights flash
 
