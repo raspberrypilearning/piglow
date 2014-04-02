@@ -2,11 +2,11 @@
 
 **Introduction**
 
-You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://shop.pimoroni.com/products/piglow). 
+You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://shop.pimoroni.com/products/piglow).
 
 ![alt image](PiGlow.jpeg "Pimoroni's PiGlow")
 
-This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (oo that rhymed.) 
+This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (oo that rhymed.)
 
 **Requirements**
 
@@ -25,7 +25,7 @@ You will need to set up your Raspberry Pi to take part in this activity. [See th
 
 ## Step 1: Setting up your Raspberry Pi to use PiGlow
 
-In order to use your PiGlow board there are a few settings that need to be changed, and some files that need to be downloaded. 
+In order to use your PiGlow board there are a few settings that need to be changed, and some files that need to be downloaded.
 
 *Note: PiGlow is based on an IC that communicates via i2c protocol. We need to enable i2c communication on your Raspberry Pi for it to work.*
 
@@ -44,9 +44,9 @@ In order to use your PiGlow board there are a few settings that need to be chang
     i2c-bcm2708
 	```
 	Press **CTRL** and **X**, followed by **Y** and **Enter** to save your changes.
-	
+
 3. You may also need to ensure the driver modules are not blacklisted by editing the blacklist config file. Type:
-	
+
 	```
     sudo nano /etc/modprobe.d/raspi-blacklist.conf
 	```
@@ -57,14 +57,14 @@ In order to use your PiGlow board there are a few settings that need to be chang
     blacklist spi-bcm2708
     blacklist i2c-bcm2708
 	```
-	
+
 	...should become...
 
 	```
    	# blacklist spi-bcm2708
     # blacklist i2c-bcm2708
     ```
-    
+
     Then save and exit by pressing **CTRL** and **X**, followed by **Y** and **Enter**
 
 5. Now download and install the i2c libraries and Python support by typing:
@@ -72,7 +72,7 @@ In order to use your PiGlow board there are a few settings that need to be chang
     ```
     sudo apt-get install python-smbus
 	```
-	
+
 6. Finally reboot your Pi!
 
 
@@ -100,8 +100,8 @@ To program the PyGlow with your Raspberry Pi you will need to download and use t
 	```
         wget https://raw.github.com/benleb/PyGlow/master/examples/test.py --no-check-certificate
 	```
-	
-7. Once downloaded, run it by typing: 
+
+7. Once downloaded, run it by typing:
 
     ```
     sudo python test.py
@@ -111,14 +111,14 @@ To program the PyGlow with your Raspberry Pi you will need to download and use t
 	```
 	White: 10
 	Blue: 20
-	Green: 30	
+	Green: 30
 	Yellow: 40
 	Orange: 50
 	Red: 60
 	All: 1
 	```
 	Press **Enter** and you should be able to see the PiGlow light up!
-	
+
 ## Step 3: Creating a PiGlow Program
 
 Now that you have all the files that you need for your PiGlow, it is time to create your very first glowing led program using Python. In this step you will learn how to import the functions that you need from the modules to turn on and off individual LEDs on the PiGlow.
@@ -132,7 +132,7 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 
 3. Save this file as `FirstPiGlow.py` by clicking on **File** and **Save As**
 
-4. Being your program by importing the Pyglow module and the Time module. 
+4. Being your program by importing the Pyglow module and the Time module.
 
 	```python
     from pyglow import PyGlow
@@ -152,7 +152,7 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 
 	```python
 	pyglow.led(1,100)
-	sleep(1)	
+	sleep(1)
 	pyglow.led(1,0)
 	sleep(1)
 	```
@@ -164,16 +164,16 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 9. Save your file by clicking on **File** and **Save**
 
 10. In an LXTerminal window type the following to run your program:
-	
+
 	```
 	sudo python FirstPiGlow.py
-	```		
-	
-	Make sure you keep an eye on your PiGlow to see if LED 1 lights up! 
-	
+	```
+
+	Make sure you keep an eye on your PiGlow to see if LED 1 lights up!
+
 **Challenge:**
-Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!	
-	
+Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!
+
 ## Step 4: Add a Loop to make the Lights Flash
 
 In the last step you created a program to turn on and off LED1 on the PiGlow. We can now add a loop to reatedly turn on and off groups of coloured LEDs.
@@ -193,7 +193,7 @@ In the last step you created a program to turn on and off LED1 on the PiGlow. We
 	    sleep(1)
 	    pyglow.color("red",0)
 	```
-	
+
 3. 	Save it as `FlashPiGlow.py` by clicking on **File** and **Save As**.
 4. 	In LXTerminal run the program by typing:
 
@@ -223,15 +223,15 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
 	```python
 	from pyglow import PyGlow
 	from time import sleep
-	
+
 	pyglow = PyGlow()
-	
+
 	pyglow.all(0)
-	
+
 	while True:
 	    pyglow.pulse_all(150,500)
 	    sleep(1)
-	    
+
 	pyglow.update_leds()
 	```
 
@@ -242,5 +242,12 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
 	```
 	sudo python pulse.py
 	```
-		    	
-	    
+# LICENCE
+
+Unless otherwise specified, everything in this repository is covered by the following licence:
+
+![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+***PiGlow*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at https://github.com/raspberrypilearning/piglow
