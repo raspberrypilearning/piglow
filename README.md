@@ -8,15 +8,8 @@ You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://sh
 
 This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (oo that rhymed.)
 
-**Requirements**
-
-This guide assumes that you have the following:
-
-- A Raspberry Pi
-- Connected to a monitor or TV
-- A keyboard and mouse
+You will require the following components alongside your Raspberry Pi:
 - A PiGlow
-- An SD card with the latest version of Raspbian installed via NOOBS
 - An internet connection either by Wifi or Ethernet to get the files you need only.
 
 ## Step 0: Set up your Raspberry Pi
