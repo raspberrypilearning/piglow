@@ -65,7 +65,7 @@ In order to use your PiGlow board there are a few settings that need to be chang
 
 ## Step 2: Test your PiGlow using the PyGlow Module
 
-To program the PyGlow with your Raspberry Pi you will need to download and use the PyGlow python module. Your Raspberry Pi will need to be connected to the internet in order to this.
+To program the PiGlow with your Raspberry Pi you will need to download and use the PyGlow python module. Your Raspberry Pi will need to be connected to the internet in order to this.
 
 **Activity Checklist:**
 
