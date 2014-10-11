@@ -218,7 +218,7 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
 2. Type the following code:
 
     ```python
-    from pyglow import PyGlow
+    from PyGlow import PyGlow
     from time import sleep
 
     pyglow = PyGlow()
@@ -226,7 +226,7 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
     pyglow.all(0)
 
     while True:
-        pyglow.pulse_all(150,500)
+        pyglow.all(brightness=150, speed=500, pulse=True)
         sleep(1)
 
     pyglow.update_leds()
