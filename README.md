@@ -78,10 +78,10 @@ To program the PiGlow with your Raspberry Pi you will need to download and use t
 4. Download the python file required by typing the following all one one line and pressing `Enter` on your keyboard:
 
     ```bash
-    wget https://raw.github.com/benleb/PyGlow/master/pyglow.py --no-check-certificate
+    wget https://raw.github.com/benleb/PyGlow/master/PyGlow.py --no-check-certificate
     ```
 
-5.  This will give you a file called `pyglow.py`, this is the module and will do all the hard work.
+5.  This will give you a file called `PyGlow.py`, this is the module and will do all the hard work.
 
 6. Now download `test.py`, a program to test that your PiGlow will work by typing:
 
@@ -124,7 +124,7 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 4. Being your program by importing the Pyglow module and the Time module.
 
     ```python
-    from pyglow import PyGlow
+    from PyGlow import PyGlow
     from time import sleep
     ```
 
