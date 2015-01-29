@@ -9,4 +9,8 @@ This project gives you the opportunity to put your PiGlow to good work by progra
 You will require the following components alongside your Raspberry Pi:
 
 - A PiGlow
-- An internet connection either by Wifi or Ethernet to get the files you need only.
+- An internet connection either by Wifi or Ethernet to get the files you need
+
+## Worksheet
+
+- [The worksheet](worksheet.md)
