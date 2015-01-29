@@ -1,6 +1,3 @@
-- name: Raspberry Pi
-  img: raspberry-pi
-  url:
 - name: PiGlow
   img: piglow
   url: http://shop.pimoroni.com/products/piglow
