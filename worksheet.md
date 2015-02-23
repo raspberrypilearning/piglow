@@ -1,4 +1,4 @@
-# Marvellous Electrical Mouse Disco
+# Getting Started with PiGlow
 
 This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (ooh - that rhymed)
 
@@ -139,3 +139,7 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
 1. Save the file as `pulse.py` by clicking on `File` and `Save As`.
 
 1. Run with `F5`.
+
+## What's next?
+- Can you create an original light show using PiGlow?
+- Can you use the PiGlow lights to tell you when an event has taken place, like a tweet or email notification?
