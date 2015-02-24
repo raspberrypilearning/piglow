@@ -1,4 +1,4 @@
-# Marvellous Electrical Mouse Disco
+# Getting Started with PiGlow
 
 You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://shop.pimoroni.com/products/piglow).
 
