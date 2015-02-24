@@ -1,6 +1,6 @@
 # Getting Started with PiGlow
 
-You may have a funky LED board for your Raspberry Pi called a [PiGlow](http://shop.pimoroni.com/products/piglow).
+You may have a funky LED board for your Raspberry Pi called a PiGlow.
 
 ![](images/piglow.jpg)
 
@@ -10,7 +10,7 @@ This project gives you the opportunity to put your PiGlow to good work by progra
 
 ### Hardware
 
-- [PiGlow](http://shop.pimoroni.com/products/piglow)
+- [PiGlow](http://shop.cyntech.co.uk/products/pibrella)
 
 ### Software
 
