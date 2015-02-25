@@ -10,7 +10,7 @@ This project gives you the opportunity to put your PiGlow to good work by progra
 
 ### Hardware
 
-- [PiGlow](http://shop.cyntech.co.uk/products/pibrella)
+- [PiGlow](http://shop.pimoroni.com/products/piglow)
 
 ### Software
 
