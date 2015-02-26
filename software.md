@@ -28,7 +28,7 @@ sudo python -c "import smbus"
 
 If you get an error saying `No module named 'smbus'` then check you have entered the commands above correctly.
 
-You'll need to create a `pyglow` folder and download the PyGlow module and a test file from GitHub with the following commands:
+You'll need to create a `pyglow` folder, and download the PyGlow module and a test file from GitHub, with the following commands:
 
 ```bash
 mkdir pyglow
@@ -84,4 +84,4 @@ You'll also need to enable the i2c driver module.
     #blacklist i2c-bcm2708
     ```
 
-    Then save and exit by pressing `CTRL` and `X`, followed by `Y` and `Enter`
+    Then save and exit by pressing `CTRL` and `X`, followed by `Y` and `Enter`.
