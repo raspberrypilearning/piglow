@@ -1,12 +1,12 @@
-# Getting Started with PiGlow
+# Getting started with PiGlow
 
-This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (ooh - that rhymed)
+This project gives you the opportunity to put your PiGlow to good work by programming it using Python. First you will need to set up your Raspberry Pi by configuring some files and downloading some modules. Then you can start to make individual LEDs blink, before getting them to pulse in pretty ways for displays! (Ooh, that rhymed!)
 
-## Test your PiGlow using the PyGlow Module
+## Test your PiGlow using the PyGlow module
 
 1. Open the Terminal application from the desktop or applications menu.
 
-1. Enter `ls` to see the files and folders in your home directory. You should see a `pyglow` folder - if not, please refer to the instructions in the [software installation](software.md) page before continuing.
+1. Enter `ls` to see the files and folders in your home directory. You should see a `pyglow` folder. If not, please refer to the instructions in the [software installation](software.md) page before continuing.
 
 1. Enter the `pyglow` folder with the command `cd pyglow`.
 
@@ -30,32 +30,32 @@ This project gives you the opportunity to put your PiGlow to good work by progra
     All: 1
     ```
 
-Press `Enter` after each one and you should be able to see the PiGlow light up in sequence!
+Press `Enter` after each one, and you should see the PiGlow light up in sequence!
 
-## Creating a PiGlow Program
+## Creating a PiGlow program
 
-Now that you have all the files that you need for your PiGlow, it is time to create your very first glowing led program using Python. In this step you will learn how to import the functions that you need from the modules to turn on and off individual LEDs on the PiGlow.
+Now that you have all the files that you need for your PiGlow, it is time to create your very first glowing LED program using Python. In this step, you will learn how to import the functions that you need from the modules to turn on and off individual LEDs on the PiGlow.
 
 1. Open the Python editor IDLE with the command `sudo idle &`.
 
-1. Once the Python Shell has loaded click on `File` and `New Window` to open a new text editor file.
+1. Once the Python Shell has loaded, click on `File` and `New Window` to open a new text editor file.
 
 1. Save this file as `FirstPiGlow.py` by clicking on `File` and `Save As`.
 
-1. Being your program by importing the Pyglow module and the `sleep` function from the `time` module.
+1. Begin your program by importing the Pyglow module and the `sleep` function from the `time` module:
 
     ```python
     from PyGlow import PyGlow
     from time import sleep
     ```
 
-1. Now create a connection to the PiGlow by typing underneath:
+1. Now create a connection to the PiGlow by typing the following underneath:
 
     ```python
     pyglow = PyGlow()
     ```
 
-1. Next set all the LEDs on the PiGlow to `0` or **off**:
+1. Next, set all the LEDs on the PiGlow to `0` or **off**:
 
     ```python
     pyglow.all(0)
@@ -80,11 +80,11 @@ Now that you have all the files that you need for your PiGlow, it is time to cre
 
     Make sure you keep an eye on your PiGlow to see if LED 1 lights up!
 
-Now that you have LED1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way!
+Now that you have LED 1 turning on and off, why not see if you can turn any of the other LEDs on and off in a similar way?
 
-## Add a Loop to make the Lights Flash
+## Add a loop to make the lights flash
 
-In the last step you created a program to turn on and off LED1 on the PiGlow. We can now add a loop to repeatedly turn on and off groups of coloured LEDs.
+In the last step, you created a program to turn LED 1 on and off on the PiGlow. We can now add a loop to repeatedly turn on and off groups of coloured LEDs.
 
 1. Open the file `FirstPiGlow.py` in `IDLE`.
 
@@ -141,5 +141,6 @@ Finally, why not get your PiGlow pulsing for the ultimate in Raspberry Pi geek c
 1. Run with `F5`.
 
 ## What's next?
+
 - Can you create an original light show using PiGlow?
 - Can you use the PiGlow lights to tell you when an event has taken place, like a tweet or email notification?
