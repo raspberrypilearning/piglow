@@ -37,14 +37,6 @@ wget http://goo.gl/zQ3CHB -O PyGlow.py --no-check-certificate
 wget http://goo.gl/18fwzn -O test.py --no-check-certificate
 ```
 
-To test this works, enter:
-
-```bash
-sudo python test.py
-```
-
-It should ask you to enter a series of colour values. If you get an error, check you have entered the commands above correctly.
-
 ## Enable i2c driver modules
 
 You'll also need to enable the i2c driver module.
@@ -85,3 +77,13 @@ You'll also need to enable the i2c driver module.
     ```
 
     Then save and exit by pressing `CTRL` and `X`, followed by `Y` and `Enter`.
+    
+## Test it works
+
+To test this works, enter:
+
+```bash
+sudo python test.py
+```
+
+It should ask you to enter a series of colour values. If you get an error, check you have entered the commands above correctly.
