@@ -57,7 +57,7 @@ You'll also need to enable the I2C driver module.
     
 1. Enter `sudo raspi-config` to open the Raspberry Pi Configuration Tool.
 
-1. Select `Advanced Options` and then choose `I2C` with the keyboard's up/down keys. Enable the I2C interface and kernel module when propted, and you'll be prompted to reboot the Pi when finishing.
+1. Select `Advanced Options` and then choose `I2C` with the keyboard's up/down keys. Enable the I2C interface and kernel module when prompted, and you'll be prompted to reboot the Pi when finishing.
     
 ## Test it works
 
