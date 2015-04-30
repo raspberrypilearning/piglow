@@ -47,35 +47,13 @@ You'll also need to enable the I2C driver module.
     sudo nano /etc/modules
     ```
 
-1. Then either **add** the following line is at the end of the file, if it's not already there:
+1. Then add the following line at the end of the file, if it's not already there:
 
     ```bash
     i2c-dev
     ```
 
     Press `CTRL + X`, followed by `Y` and `Enter` to save your changes.
-
-1. You may also need to ensure the driver modules are not blacklisted by editing the blacklist configuration file. Type:
-
-    ```bash
-    sudo nano /etc/modprobe.d/raspi-blacklist.conf
-    ```
-
-1. Comment out the following lines, by adding a hash symbol `#` at the start of the line. So:
-
-    ```bash
-    blacklist spi-bcm2708
-    blacklist i2c-bcm2708
-    ```
-
-    ...should become...
-
-    ```bash
-    #blacklist spi-bcm2708
-    #blacklist i2c-bcm2708
-    ```
-
-    Then save and exit by pressing `CTRL` and `X`, followed by `Y` and `Enter`.
     
 1. Enter `sudo raspi-config` to open the Raspberry Pi Configuration Tool.
 
