@@ -37,9 +37,9 @@ wget http://goo.gl/zQ3CHB -O PyGlow.py --no-check-certificate
 wget http://goo.gl/18fwzn -O test.py --no-check-certificate
 ```
 
-## Enable i2c driver modules
+## Enable I2C driver modules
 
-You'll also need to enable the i2c driver module.
+You'll also need to enable the I2C driver module.
 
 1. Edit the modules configuration file:
 
@@ -47,11 +47,10 @@ You'll also need to enable the i2c driver module.
     sudo nano /etc/modules
     ```
 
-1. Then either **add** or ensure the following lines are at the end of the file:
+1. Then either **add** the following line is at the end of the file, if it's not already there:
 
     ```bash
     i2c-dev
-    i2c-bcm2708
     ```
 
     Press `CTRL + X`, followed by `Y` and `Enter` to save your changes.
@@ -77,6 +76,10 @@ You'll also need to enable the i2c driver module.
     ```
 
     Then save and exit by pressing `CTRL` and `X`, followed by `Y` and `Enter`.
+    
+1. Enter `sudo raspi-config` to open the Raspberry Pi Configuration Tool.
+
+1. Select `Advanced Options` and then choose `I2C` with the keyboard's up/down keys. Enable the I2C interface and kernel module when propted, and you'll be prompted to reboot the Pi when finishing.
     
 ## Test it works
 
