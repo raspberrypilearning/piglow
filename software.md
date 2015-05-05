@@ -28,15 +28,6 @@ sudo python -c "import smbus"
 
 If you get an error saying `No module named 'smbus'` then check you have entered the commands above correctly.
 
-You'll need to create a `pyglow` folder, and download the PyGlow module and a test file from GitHub, with the following commands:
-
-```bash
-mkdir pyglow
-cd pyglow
-wget http://goo.gl/zQ3CHB -O PyGlow.py --no-check-certificate
-wget http://goo.gl/18fwzn -O test.py --no-check-certificate
-```
-
 ## Enable I2C driver modules
 
 You'll also need to enable the I2C driver module.
@@ -59,7 +50,16 @@ You'll also need to enable the I2C driver module.
 
 1. Select `Advanced Options` and then choose `I2C` with the keyboard's up/down keys. Enable the I2C interface and kernel module when prompted, and you'll be prompted to reboot the Pi when finishing.
     
-## Test it works
+## Download PyGlow module and test
+
+You'll need to create a `pyglow` folder, and download the PyGlow module and a test file from GitHub, using the following commands:
+
+```bash
+mkdir pyglow
+cd pyglow
+wget http://goo.gl/zQ3CHB -O PyGlow.py --no-check-certificate
+wget http://goo.gl/18fwzn -O test.py --no-check-certificate
+```
 
 To test this works, enter:
 
